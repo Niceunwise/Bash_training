@@ -1,0 +1,217 @@
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ cd ~
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~
+$ mkdir test3
+mkdir: cannot create directory ‘test3’: File exists
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~
+$ touch 4 5 6 
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~
+$ cd test3
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ touch 4 5 6 
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ printf "row1\nrow2\nrow3\nrow4\n" > 4
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ printf "row1\nrow2\nrow3\nrow4\n" > 5
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ printf "row1\nrow2\nrow3\nrow4\n" > 6
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ grep "row2" 5 
+row2
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ grep -r "row" test3
+grep: test3: No such file or directory
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ grep -r "row" 
+4:row1
+4:row2
+4:row3
+4:row4
+5:row1
+5:row2
+5:row3
+5:row4
+6:row1
+6:row2
+6:row3
+6:row4
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ grep -c "row" 6
+4
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ find -name "5"
+./5
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ find -name "5" -delete 
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ echo "test" >> 4
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ sed -i 's/test/fail/' 4
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ echo -n "test" >> 4
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ ps aux
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+     2100       1    2100      18520  ?         197608 15:49:41 /usr/bin/mintty
+     2798       1    2798       2344  cons0     197608 21:32:54 /usr/bin/bash
+     2161       1    2161      11328  ?         197608 16:13:34 /usr/bin/ssh-agent
+     2144       1    2144       2828  ?         197608 16:06:58 /usr/bin/ssh-agent
+     2101    2100    2101       1176  pty0      197608 15:49:41 /usr/bin/bash
+     2880    2798    2880       7160  cons0     197608 21:51:12 /usr/bin/ps
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ kill 666
+bash: kill: (666) - No such process
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ ping -c artsiomrusau.com
+Доступ запрещен. Для параметра -c требуются права администратора.
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ ping -c 4 artsiomrusau.com
+Доступ запрещен. Для параметра -c требуются права администратора.
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ ping artsiomrusau.com
+
+Обмен пакетами с artsiomrusau.com [185.215.4.92] с 32 байтами данных:
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+
+Статистика Ping для 185.215.4.92:
+    Пакетов: отправлено = 4, получено = 0, потеряно = 4
+    (100% потерь)
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ ping https://artsiomrusau.com/
+При проверке связи не удалось обнаружить узел https://artsiomrusau.com/.
+Проверьте имя узла и повторите попытку.
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ ping artsiomrusau.com
+
+Обмен пакетами с artsiomrusau.com [185.215.4.92] с 32 байтами данных:
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+Превышен интервал ожидания для запроса.
+
+Статистика Ping для 185.215.4.92:
+    Пакетов: отправлено = 4, получено = 0, потеряно = 4
+    (100% потерь)
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ curl -X GET https://petstore.swagger.io/
+curl: (35) schannel: next InitializeSecurityContext failed: Unknown error (0x80092012) - Функция отзыва не смогла произвести проверку отзыва для сертификата.        
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ curl https://petstore.swagger.io/v2/store/inventory
+curl: (35) schannel: next InitializeSecurityContext failed: Unknown error (0x80092012) - Функция отзыва не смогла произвести проверку отзыва для сертификата.        
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ curl -v https://petstore.swagger.io/v2/store/inventory
+*   Trying 54.237.141.65:443...
+* Connected to petstore.swagger.io (54.237.141.65) port 443
+* schannel: disabled automatic use of client certificate
+* schannel: next InitializeSecurityContext failed: Unknown error (0x80092012) - Функция отзыва не смогла произвести проверку отзыва для сертификата.
+* Closing connection
+* schannel: shutting down SSL/TLS connection with petstore.swagger.io port 443
+curl: (35) schannel: next InitializeSecurityContext failed: Unknown error (0x80092012) - Функция отзыва не смогла произвести проверку отзыва для сертификата.
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ curl -kv https://petstore.swagger.io/v2/store/inventory
+*   Trying 54.237.141.65:443...
+* Connected to petstore.swagger.io (54.237.141.65) port 443
+* schannel: disabled automatic use of client certificate
+* using HTTP/1.x
+> GET /v2/store/inventory HTTP/1.1
+> Host: petstore.swagger.io
+> User-Agent: curl/8.4.0
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Date: Sun, 17 Dec 2023 19:11:42 GMT
+< Content-Type: application/json
+< Transfer-Encoding: chunked
+< Connection: keep-alive
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+< Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+< Server: Jetty(9.2.9.v20150224)
+<
+{"sold":15,"5000":1,"6000":1,"string":653,"pending":13,"cat":2,"available":309,"weisskeiner1":1}* Connection #0 to host petstore.swagger.io left intact
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ curl -X POST https://petstore.swagger.io/v2/user --data "id": 0,""
+curl: (35) schannel: next InitializeSecurityContext failed: Unknown error (0x80092012) - Функция отзыва не смогла произвести проверку отзыва для сертификата.
+curl: (3) URL rejected: Bad hostname
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$   "username": "string",
+bash: username:: command not found
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$   "firstName": "string",
+bash: firstName:: command not found
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$   "lastName": "string",
+bash: lastName:: command not found
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$   "email": "string",
+bash: email:: command not found
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$   "password": "string",
+bash: password:: command not found
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$   "phone": "string",
+bash: phone:: command not found
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$   "userStatus": 0
+bash: userStatus:: command not found
+
+NiceUnwise@WIN-FTB2OR85MAI MINGW64 ~/test3
+$ curl -X POST https://petstore.swagger.io/v2/user --data "id=0" --data "username=user8888" -- data "firstName=John" --data "lastName=Smith" --data "email=test@mail.ru" --data "password=99999999" --data "phone=888888888" --data "userStatus=0"
+curl: (35) schannel: next InitializeSecurityContext failed: Unknown error (0x80092012) - Функция отзыва не смогла произвести проверку отзыва для сертификата.
+curl: (6) Could not resolve host: data
+curl: (3) URL rejected: Bad hostname
+curl: (6) Could not resolve host: --data
+curl: (3) URL rejected: Bad hostname
+curl: (6) Could not resolve host: --data
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.25.3</center>
+</body>
+</html>
+curl: (6) Could not resolve host: --data
+curl: (3) URL rejected: Bad hostname
+curl: (6) Could not resolve host: --data
+curl: (3) URL rejected: Bad hostname
+curl: (6) Could not resolve host: --data
+curl: (3) URL rejected: Bad hostname
