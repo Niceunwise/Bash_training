@@ -3,43 +3,41 @@ In this repository you can find 2 files I've made completing the task on Bash. G
 
 
 Task 1.\
-Открыть домашнюю директорию\
-Определить имя папки, в которой вы находитесь\
-Создать внутри этой папки каталог  с именем test1\
-Перейти в папку test1\
-Создать файл 1,2 и 3 внутри каталога test1\
-Проверить содержимое каталога test1\
-Перейти в домашнюю директорию\
-Создать папку test2 внутри домашней директории\
-Удалить папку test2\
-Удалить файл 2 из папки test1\
-Создать папку в домашней директории test3 и добавить в нее два файла\
-Удалить папку test3\
-Создать папку test4 в домашней директории\
-Переместить файлы 1 и 3 из папки test1 в папку test4\
-Добавить в файл 1 три строки со словами line\
-Посмотреть содержимое файла 1\
-Добавьте в файл 3 три строки со словами line\
-Просмотрите содержимое двух файлов (1 и 3) сразу\
-Используя один из редакторов замените все строки в файле 1\
+Open the home directory\
+Determine the name of the folder you are in\
+Create a directory named test1 inside this folder\
+Move to the test1 folder\
+Create files 1, 2, and 3 inside the test1 directory\
+Check the contents of the test1 directory\
+Go back to the home directory\
+Create a folder named test2 inside the home directory\
+Delete the test2 folder\
+Delete file 2 from the test1 folder\
+Create a folder named test3 in the home directory and add two files to it\
+Delete the test3 folder\
+Create a folder named test4 in the home directory\
+Move files 1 and 3 from the test1 folder to the test4 folder\
+Add three lines with the words "line" to file 1\
+View the contents of file 1\
+Add three lines with the words "line" to file 3\
+View the contents of both files (1 and 3) simultaneously\
+Using one of the text editors, replace all lines in file 1
 
-Task 2.
-
-Зайти в домашнюю директорию\
-Создать папку test 3\
-Добавить в папку test 3 три файла 4, 5 и 6, в каждом из которых должно быть по 4 строки row1, row2, row3, row4\
-Найдите строку row2 в файле 5\
-Найдите строку row в папке test3\
-Посчитайте сколько строк с содержимым row в файле 6\
-Найдите файл 5 внутри папки test3\
-Используя команду find, удалите файл 5\
-Используя команду echo, добавьте слово test в файл 4\
-Замените слово test в файле 4 на fail\
-Добавьте в файл 4 слово test так, чтобы сохранилось содержимое\
-Просмотрите все процессы для юзеров не только в консоли, которые происходят в системе\
-Убейте процесс 666 в консоли\
-Узнайте доступность ресурса artsiomrusau.com, используя ping\
-Отправьте 5 пакетов на сайт artsiomrusau.com\
-Используя GET и команду curl, получите информацию о зарегистрированных питомцах на https://petstore.swagger.io/
-Используя POST и команду curl, создайте нового пользователя на https://petstore.swagger.io/
-
+Task 2.\
+Enter the home directory\
+Create a folder named test3\
+Add three files (4, 5, and 6) to the test3 folder, each containing 4 lines with "row1," "row2," "row3," and "row4"\
+Find the line "row2" in file 5\
+Find lines containing "row" in the test3 folder\
+Count the number of lines with the content "row" in file 6\
+Locate file 5 within the test3 folder\
+Using the find command, delete file 5\
+Using the echo command, add the word "test" to file 4\
+Replace the word "test" with "fail" in file 4\
+Add the word "test" to file 4, preserving the existing content\
+View all processes for users, not just in the console, occurring in the system\
+Terminate the process with ID 666 in the console\
+Check the availability of the resource artsiomrusau.com using ping\
+Send 5 packets to the website artsiomrusau.com\
+Using GET and the curl command, retrieve information about registered pets at https://petstore.swagger.io/ \
+Using POST and the curl command, create a new user at https://petstore.swagger.io/ 
